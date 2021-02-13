@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/sitetwo.scss';
 //importing arrow icons
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';

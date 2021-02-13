@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from '../src/components/Container';
 //importing icons
 import { library } from '@fortawesome/fontawesome-svg-core';

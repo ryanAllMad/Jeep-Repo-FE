@@ -2,7 +2,6 @@
 import componentOne from '../components/SiteOne';
 
 
-import React from 'react';
 import SiteOne from '../components/SiteOne';
 import SiteTwo from '../components/SiteTwo';
 
@@ -10,7 +9,7 @@ const Container = () => {
     return(
         <div>
             <SiteOne />
-            <SiteTwo />
+            {/* <SiteTwo /> */}
         </div>
     )
 }
