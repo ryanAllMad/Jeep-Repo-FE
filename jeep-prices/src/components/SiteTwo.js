@@ -48,7 +48,7 @@ const SiteTwo = () => {
 
                 <div className='vehicleImg-container'>
                 <h3>Car Img</h3>
-                <p>{data.img}</p>
+                <img src={data.img} alt='jeep img'></img>
                 </div>
 
                 <FontAwesomeIcon icon="angle-right" className='right-arrow-two' />
