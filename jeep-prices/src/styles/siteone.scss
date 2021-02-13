@@ -1,0 +1,35 @@
+@import 'mixins.scss';
+
+//this gives me the placement I want...yay!
+.left-arrow {
+    @include leftArrowOne;
+}
+ 
+.right-arrow {
+    @include rightArrowOne;
+}
+
+.site-container {
+    @include container;
+    @include border;
+    display: grid;
+    margin: 5% 3%;
+}
+
+.price-container {
+ @include border;
+   grid-column: 1 / 4;
+   margin: 0 auto;
+
+}
+
+.details-container {
+    @include border;
+    grid-column: 1 / 1;
+}
+
+.vehicle-img-container {
+    @include border;
+    grid-column: 3 / 3;
+}
+

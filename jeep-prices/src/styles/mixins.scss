@@ -1,0 +1,41 @@
+//re-useable styles
+@mixin container {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin border {
+    border: 2px dashed black;
+}
+
+@mixin leftArrowOne {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+}
+
+@mixin leftArrowTwo {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+}
+
+@mixin rightArrowOne {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;  
+}
+
+@mixin rightArrowTwo {
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+}

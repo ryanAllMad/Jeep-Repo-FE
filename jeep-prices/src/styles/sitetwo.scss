@@ -1,0 +1,42 @@
+@import 'mixins.scss';
+
+.left-arrow-two {
+    @include leftArrowTwo
+ }
+ 
+ .right-arrow-two {
+    @include rightArrowTwo;
+  }
+
+.site-container {
+    @include container;
+    @include border;
+    display: grid;
+    margin: 5% 3%;
+}
+
+.miles-container {
+   @include border;
+   grid-column: 1 / 1;
+}
+
+.listPrice-container {
+    @include border;
+    grid-column: 2 / 2;
+ }
+
+ .monthlyPrice-container {
+    @include border;
+    grid-column: 3 / 3;
+ }
+
+
+.test{
+    @include border;
+    grid-column: 1 / 2;
+}
+
+.vehicleImg-container {
+    grid-column: 3 / 3;
+    @include border;
+}
