@@ -1,0 +1,86 @@
+@import 'mixins.scss';
+
+
+body {
+    white-space: pre-wrap;
+  }
+
+  h2 {
+      text-align: center;
+  }
+
+h3 {
+    text-align: center;
+   
+}
+
+.left-arrow {
+    @include leftArrowOne;
+}
+.left-arrow:hover {
+    @include leftArrowOne;
+    color: rosybrown;
+}
+ 
+.right-arrow {
+    @include rightArrowOne;
+}
+
+.right-arrow:hover {
+    @include rightArrowOne;
+    color: rosybrown;
+}
+
+.site-container-one {
+    @include container;
+    display: grid;
+    // border: 3px solid black;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 950px;
+   
+}
+
+.price-container {
+//  @include border;
+   grid-column: 1 / 4;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   width: auto;
+   margin: 2%;
+}
+
+.price-container p {
+    text-align: center;
+}
+
+.details-container {
+    // @include border;
+    grid-column: 1 / 2;
+    // border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+.details-container p {
+    word-wrap: none;
+    word-break: break-all;
+}
+
+.title {
+    text-align: center;
+}
+
+.vehicleImg-container {
+    // @include border;
+    // border: 2px solid black;
+    grid-column: 2 / 2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+.vehicleImg-container img {
+    width: fit-content;
+    padding-left: 15%;
+}
+

@@ -1,0 +1,76 @@
+@import 'mixins.scss';
+
+.left-arrow-two {
+    @include leftArrowTwo
+ }
+
+ .left-arrow-two:hover {
+    @include leftArrowTwo;
+    color: rosybrown;
+ }
+ 
+ .right-arrow-two {
+    @include rightArrowTwo;
+  }
+
+  .right-arrow-two:hover {
+    @include rightArrowTwo;
+    color: rosybrown;
+  }
+
+.site-container-two {
+    @include container;
+    // @include border;
+    display: grid;
+    margin: 5% 3%;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 950px;
+    margin: 1% auto;
+}
+
+.miles-container {
+//    @include border;
+   grid-column: 1 / 1;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   text-align: center;
+   margin: 2%;
+}
+
+.listPrice-container {
+    // @include border;
+    grid-column: 2 / 2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+    text-align: center;
+ }
+
+ .monthlyPrice-container {
+    // @include border;
+    grid-column: 3 / 3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+    text-align: center;
+ }
+
+
+.vehicleDetails-container{
+    // @include border;
+    grid-column: 1 / 3;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+.vehicleImg-two-container {
+    grid-column: 3 / 4;
+    // @include border;
+    // border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+.vehicleImg-two-container img {
+   max-width: fit-content;
+   width: 300px;
+   padding-left: .75%;
+}
