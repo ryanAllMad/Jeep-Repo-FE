@@ -2,18 +2,22 @@ import '../styles/sitetwo.scss';
 //importing arrow icons
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import useData from './UseData';
+import Spinner from './Spinner';
 
 
 const SiteTwo = () => {
 
-    const {siteState, currentCard, nextCard, prevCard} = useData('https://jeep-prices-repo-be.herokuapp.com/siteTwo');
+    const {siteState, currentCard, nextCard, prevCard, isLoading} = useData('https://jeep-prices-repo-be.herokuapp.com/siteTwo');
 
 
     return(
         <>
+        {!isLoading ? (
+
+        <>
         {siteState.map((data, i) => {
-            
             return(
+                
                 <> 
                 { currentCard === i &&
                 <div className='site-container-two'>
@@ -57,7 +61,9 @@ const SiteTwo = () => {
             )
         })}
         </>
-    )
+        )  : (< Spinner />) }
+        </>
+        )
 }
 
 

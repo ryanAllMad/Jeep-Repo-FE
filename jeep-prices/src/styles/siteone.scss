@@ -1,6 +1,19 @@
 @import 'mixins.scss';
 
-//this gives me the placement I want...yay!
+
+body {
+    white-space: pre-wrap;
+  }
+
+  h2 {
+      text-align: center;
+  }
+
+h3 {
+    text-align: center;
+   
+}
+
 .left-arrow {
     @include leftArrowOne;
 }
@@ -9,27 +22,55 @@
     @include rightArrowOne;
 }
 
-.site-container {
+.site-container-one {
     @include container;
-    @include border;
     display: grid;
-    margin: 5% 3%;
+    // border: 3px solid black;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 950px;
+   
 }
 
 .price-container {
- @include border;
+//  @include border;
    grid-column: 1 / 4;
-   margin: 0 auto;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   width: auto;
+   margin: 2%;
+}
 
+.price-container p {
+    text-align: center;
 }
 
 .details-container {
-    @include border;
-    grid-column: 1 / 1;
+    // @include border;
+    grid-column: 1 / 2;
+    // border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+.details-container p {
+    word-wrap: none;
+    word-break: break-all;
+}
+
+.title {
+    text-align: center;
 }
 
 .vehicleImg-container {
-    @include border;
-    grid-column: 3 / 3;
+    // @include border;
+    // border: 2px solid black;
+    grid-column: 2 / 2;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 2%;
+}
+
+img {
+    width: fit-content;
 }
 

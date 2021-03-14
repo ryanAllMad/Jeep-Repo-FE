@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 //created custom hook to pass state + reuseable functions
 const useData = (myUrl) => {
 
 const [siteState, setSiteState] = useState([]);
 const [currentCard, setCurrentCard] = useState(0);
+const [isLoading, setLoading] = useState(true);
 
 //reset once it hits ends of []
 const nextCard = () => {
@@ -19,15 +21,20 @@ const prevCard = () => {
 }
 // console.log('prev', currentCard)
 
+
+
     useEffect(() => {
         axios.get(myUrl)
-        .then(res => setSiteState(res.data))
-        // .then(res => console.log(res))
+        .then(res => {
+            setSiteState(res.data)
+            setLoading(false)
+        })
         .catch(err => console.log(err))
+     
     }, []);
 
 
-    return { siteState, currentCard, nextCard, prevCard}
+    return { siteState, currentCard, nextCard, prevCard, isLoading}
 }
 
 

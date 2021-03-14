@@ -10,32 +10,32 @@
 
 @mixin leftArrowOne {
     position: absolute;
-    top: 25%;
-    left: 10%;
+    top: 10%;
+    left: 26%;
     transform: translate(-50%,-50%);
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 @mixin leftArrowTwo {
     position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 58%;
+    left: 26%;
     transform: translate(-50%,-50%);
-    font-size: 3em;
+    font-size: 3.5em;
 }
 
 @mixin rightArrowOne {
     position: absolute;
-    top: 25%;
-    right: 10%;
+    top: 10%;
+    right: 26%;
     transform: translate(-50%,-50%);
-    font-size: 3em;  
+    font-size: 3.5em;  
 }
 
 @mixin rightArrowTwo {
     position: absolute;
-    top: 60%;
-    right: 10%;
+    top: 58%;
+    right: 26%;
     transform: translate(-50%,-50%);
-    font-size: 3em;
+    font-size: 3.5em;
 }
