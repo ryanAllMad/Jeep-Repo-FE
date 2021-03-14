@@ -17,9 +17,18 @@ h3 {
 .left-arrow {
     @include leftArrowOne;
 }
+.left-arrow:hover {
+    @include leftArrowOne;
+    color: rosybrown;
+}
  
 .right-arrow {
     @include rightArrowOne;
+}
+
+.right-arrow:hover {
+    @include rightArrowOne;
+    color: rosybrown;
 }
 
 .site-container-one {
@@ -70,7 +79,8 @@ h3 {
     margin: 2%;
 }
 
-img {
+.vehicleImg-container img {
     width: fit-content;
+    padding-left: 15%;
 }
 

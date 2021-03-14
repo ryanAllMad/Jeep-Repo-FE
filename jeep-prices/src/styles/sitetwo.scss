@@ -3,9 +3,19 @@
 .left-arrow-two {
     @include leftArrowTwo
  }
+
+ .left-arrow-two:hover {
+    @include leftArrowTwo;
+    color: rosybrown;
+ }
  
  .right-arrow-two {
     @include rightArrowTwo;
+  }
+
+  .right-arrow-two:hover {
+    @include rightArrowTwo;
+    color: rosybrown;
   }
 
 .site-container-two {
@@ -17,8 +27,6 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     width: 950px;
     margin: 1% auto;
-   
-
 }
 
 .miles-container {
@@ -61,3 +69,8 @@
     margin: 2%;
 }
 
+.vehicleImg-two-container img {
+   max-width: fit-content;
+   width: 300px;
+   padding-left: .75%;
+}

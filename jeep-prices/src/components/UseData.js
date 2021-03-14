@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
-//created custom hook to pass state + reuseable functions
+//created custom hook to pass state + load spinner + reuseable functions to make a card carousel
 const useData = (myUrl) => {
 
 const [siteState, setSiteState] = useState([]);
