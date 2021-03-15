@@ -1,6 +1,6 @@
 // import completed components into this file
-import SiteOne from '../components/SiteOne';
-import SiteTwo from '../components/SiteTwo';
+import SiteOne from './SiteOne';
+import SiteTwo from './SiteTwo';
 
 
 const Container = () => {
