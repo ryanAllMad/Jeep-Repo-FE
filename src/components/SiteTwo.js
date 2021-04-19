@@ -1,6 +1,5 @@
 import '../styles/_sitetwo.scss';
 //importing arrow icons
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import useData from './UseData';
 import Spinner from './Spinner';
 

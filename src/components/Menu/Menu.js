@@ -6,6 +6,7 @@ import OpenMenu from './OpenMenu';
 
 const Menu = () => {
 
+
    const [openMenu, setOpenMenu] = useState(false);
 
   
@@ -24,7 +25,7 @@ const Menu = () => {
         {openMenu ?  (
             <>
             <FontAwesomeIcon icon="times-circle" className='x-close-icon' onClick={closeSlidingMenu} />
-            <OpenMenu onClick={closeSlidingMenu} />
+            <OpenMenu  />
         
          </>
         ) : ( <FontAwesomeIcon icon="bars" className='hamburger-icon' onClick={openSlidingMenu} />)}

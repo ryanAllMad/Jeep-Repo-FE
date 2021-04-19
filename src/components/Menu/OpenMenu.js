@@ -4,6 +4,7 @@ import '../../styles/_menu.scss';
 
 
 const OpenMenu = () => {
+
     return(
         <section className='nav-container'>
             <NavLink to={`/site-one`}className='nav' activeClassName='selected' activeStyle={{color: 'white', cursor: 'pointer' }}> Site One</NavLink>

@@ -3,6 +3,7 @@ import '../styles/_siteone.scss';
 import useData from './UseData';
 import Spinner from './Spinner';
 import { Route, NavLink, Link} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
 
@@ -25,6 +26,7 @@ const SiteOne = () => {
                 <div className='site-container-one' key={data._id}>
                 <h3 className='prev' onClick={prevCard}>Previous Page</h3>
                 <h3 className='next' onClick={nextCard}>Next Page</h3>
+                <FontAwesomeIcon icon="heart" className='heart-icon'/>
                 {/* <h2>Site One Name Here</h2> */}
                 {/* price is one row centered*/}
                 <div className='price-container'>
