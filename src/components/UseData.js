@@ -8,6 +8,8 @@ const [siteState, setSiteState] = useState([]);
 const [currentCard, setCurrentCard] = useState(0);
 const [isLoading, setLoading] = useState(true);
 
+
+
 //reset once it hits ends of []
 const nextCard = () => {
     setCurrentCard(currentCard === siteState.length - 1 ? 0: currentCard + 1)
@@ -21,7 +23,6 @@ const prevCard = () => {
 // console.log('prev', currentCard)
 
 
-
     useEffect(() => {
         axios.get(myUrl)
         .then(res => {
@@ -33,7 +34,7 @@ const prevCard = () => {
     }, []);
 
 
-    return { siteState, currentCard, nextCard, prevCard, isLoading}
+    return { siteState, setSiteState, currentCard, nextCard, prevCard, isLoading}
 }
 
 

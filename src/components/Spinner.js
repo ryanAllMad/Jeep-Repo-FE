@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
 import Loader from "react-loader-spinner";
-import '../styles/spinner.scss';
+import '../styles/_spinner.scss';
 
 const Spinner = () => {
 
@@ -9,8 +8,8 @@ const Spinner = () => {
      <Loader
         type="ThreeDots"
         color="#00BFFF"
-        height={200}
-        width={200}
+        height={500}
+        width={500}
         className='loader'
       />
       </div>

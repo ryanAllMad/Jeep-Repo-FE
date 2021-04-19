@@ -1,4 +1,4 @@
-import '../styles/sitetwo.scss';
+import '../styles/_sitetwo.scss';
 //importing arrow icons
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import useData from './UseData';
@@ -20,10 +20,11 @@ const SiteTwo = () => {
                 
                 <> 
                 { currentCard === i &&
-                <div className='site-container-two'>
-                <FontAwesomeIcon icon="angle-left" className='left-arrow-two' onClick={prevCard} />
+                <div className='site-container-two' key={data._id} >
+                {/* <FontAwesomeIcon icon="angle-left" className='left-arrow-two' onClick={prevCard} /> */}
                 {/* <h2>Site two goes here.</h2> */}
-
+                <h3 className='prev' onClick={prevCard}>Previous Page</h3>
+                <h3 className='next' onClick={nextCard}>Next Page</h3>
                 <div className='miles-container'>
                 <h3>Mileage</h3>
                 <hr></hr>
@@ -54,7 +55,7 @@ const SiteTwo = () => {
                 <img src={data.img} alt='jeep img'></img>
                 </div>
 
-                <FontAwesomeIcon icon="angle-right" className='right-arrow-two' onClick={nextCard} />
+                {/* <FontAwesomeIcon icon="angle-right" className='right-arrow-two' onClick={nextCard} /> */}
                 </div>
                   }
                 </>

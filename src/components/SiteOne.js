@@ -1,8 +1,8 @@
-import '../styles/siteone.scss';
+import '../styles/_siteone.scss';
 //importing arrow icons
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import useData from './UseData';
 import Spinner from './Spinner';
+import { Route, NavLink, Link} from 'react-router-dom';
 
 
 
@@ -13,17 +13,18 @@ const SiteOne = () => {
     const {siteState, currentCard, nextCard, prevCard, isLoading} = useData('https://jeep-prices-repo-be.herokuapp.com/siteOne');
 
 
+  
     return(
         <>
         {!isLoading ? (
-       
         <>
         {siteState.map((data, i) => {
             return( 
                 <> 
                 {currentCard === i &&
-                <div className='site-container-one' key={data.id}>
-                 <FontAwesomeIcon icon="angle-left" className='left-arrow' onClick={prevCard} />
+                <div className='site-container-one' key={data._id}>
+                <h3 className='prev' onClick={prevCard}>Previous Page</h3>
+                <h3 className='next' onClick={nextCard}>Next Page</h3>
                 {/* <h2>Site One Name Here</h2> */}
                 {/* price is one row centered*/}
                 <div className='price-container'>
@@ -44,16 +45,14 @@ const SiteOne = () => {
                 <hr></hr>
                 <img src={data.img} alt='jeep img'></img>
                 </div>
-        
-                <FontAwesomeIcon icon="angle-right" className='right-arrow' onClick={nextCard} />
                 </div>  
         }  
                 </>
             )
-
+    
         })}
         </>
-      )  : (< Spinner />) }
+        )  : (< Spinner />) }
         </>
     
     )

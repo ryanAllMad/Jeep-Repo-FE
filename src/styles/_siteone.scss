@@ -1,8 +1,9 @@
-@import 'mixins.scss';
+@import '_mixins';
 
 
 body {
     white-space: pre-wrap;
+    background-color: #17212D;
   }
 
   h2 {
@@ -11,60 +12,78 @@ body {
 
 h3 {
     text-align: center;
+    color: #3B4959;
    
 }
 
-.left-arrow {
-    @include leftArrowOne;
-}
-.left-arrow:hover {
-    @include leftArrowOne;
-    color: rosybrown;
-}
- 
-.right-arrow {
-    @include rightArrowOne;
+
+.prev:hover {
+   color: white;
+   cursor: pointer;
 }
 
-.right-arrow:hover {
-    @include rightArrowOne;
-    color: rosybrown;
+.prev:active {
+    color: paleturquoise;
+    cursor: pointer; 
 }
+
+.next:hover {
+    color: white;
+    cursor: pointer; 
+ }
+ 
+ .next:active {
+    color: paleturquoise;
+    cursor: pointer; 
+ }
 
 .site-container-one {
     @include container;
     display: grid;
-    // border: 3px solid black;
-    margin: 0 auto;
+    @include border;
+    border-radius: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     grid-template-columns: repeat(2, 1fr);
-    width: 950px;
-   
+    max-height: 100%;
 }
 
 .price-container {
 //  @include border;
    grid-column: 1 / 4;
+   @include containerColor;
    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
    width: auto;
-   margin: 2%;
+   margin: 3% 5% 5% 5%;
+   padding: 5%;
+   border-radius: 15px;
+   height: 150px;
 }
 
 .price-container p {
     text-align: center;
+    color: #CED1D3;
+
 }
 
 .details-container {
     // @include border;
     grid-column: 1 / 2;
+    @include containerColor;
     // border: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin: 2%;
+    margin: 5% 5% 5% 5%;
+    padding: 5%;
+    border-radius: 15px;
+    height: auto;
+
 }
 
 .details-container p {
     word-wrap: none;
     word-break: break-all;
+    color: #CED1D3;
 }
 
 .title {
@@ -74,13 +93,20 @@ h3 {
 .vehicleImg-container {
     // @include border;
     // border: 2px solid black;
+    @include containerColor;
     grid-column: 2 / 2;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    margin: 2%;
+    margin: 5% 5% 5% 5%;
+    border-radius: 15px;
+    padding: 5%;
+    height: auto;
+
+
+    img {
+        width: auto;
+    }
+
 }
 
-.vehicleImg-container img {
-    width: fit-content;
-    padding-left: 15%;
-}
+
 
