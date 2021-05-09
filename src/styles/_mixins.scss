@@ -1,0 +1,15 @@
+//re-useable styles
+@mixin container {
+    display: flex;
+    justify-content: center;
+    // max-height: 100%;
+}
+
+@mixin border {
+    border: 3px solid black;
+}
+
+
+@mixin containerColor{
+    background-color: #202B3B;
+}

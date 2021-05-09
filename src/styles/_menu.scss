@@ -1,0 +1,39 @@
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    background-color: #202B3B;
+    height: 100%;
+    width: 200px;
+    transition: 0.5s;
+    text-align: center;
+    padding: 3rem;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    // transform: translateX(0px, 100px);
+ 
+}
+
+.nav {
+    justify-content: space-evenly;
+    margin: 10%;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.hamburger-icon {
+    font-size: 2.5rem;
+    margin-left: 1%;
+    color: #3B4959;
+}
+
+.x-close-icon {
+    font-size: 2.5rem;
+    z-index: 1;
+    position:absolute;
+    margin-left: 1%;
+    color: #3B4959;
+}
+
