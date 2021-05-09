@@ -1,6 +1,6 @@
 import '../styles/_sitetwo.scss';
 //importing arrow icons
-import useData from './UseData';
+import useData from './Hooks/UseData';
 import Spinner from './Spinner';
 
 
