@@ -1,4 +1,5 @@
 import '../styles/_siteone.scss';
+import '../styles/ryan.css';
 //importing arrow icons
 import useData from './Hooks/UseData';
 // import useFaves from './Hooks/useFaves';
