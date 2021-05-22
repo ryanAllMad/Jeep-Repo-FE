@@ -1,0 +1,114 @@
+/**
+HOME
+**/
+body {
+    background: url(/src/components/banners-brand-jeep.png) no-repeat 0 0;
+}
+/**
+*DARK MODE STYLES
+**/
+#root {
+    background: #202B3B;
+}
+body .nav-container {
+    background-color: rgb(255, 186, 0);
+}
+a.nav {
+color: #333333;
+    text-transform: uppercase;
+       /*
+    border-style: solid;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-width: 2px;
+    border-color: #333333;
+    border-radius: 10%;
+    */
+    padding-bottom: 5%;
+}
+a.nav:hover, a.nav:visited {
+    color: #8f0c2c; 
+}
+.x-close-icon {
+    margin-left: 1%;
+    color: #8f0c2c;
+}
+body h3, body .hamburger-icon {
+    color: #efefef;
+}
+body .prev:hover, body .next:hover, body .hamburger-icon:hover {
+    color:#efefef;
+}
+hr {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(255, 186, 0);
+    border-radius: 100%;
+}
+
+body .site-container-two, body .site-container-one {
+    border:none;
+    background-color: #efefef;
+}
+.site-container-two h3.next {
+    grid-column: 3/3;
+
+}
+body h3.next, body h3.prev {
+    background: rgb(255, 186, 0);
+    padding: 1.5% 1%;
+    margin: 3% 5%;
+    border-radius: 10px;
+    color:#333333;
+}
+body h3.next:hover, body h3.prev:hover {
+    background: #202B3B;
+}
+/**
+SPACING
+**/
+body .hamburger-icon {
+    padding: 1.5% .5% 1.5% 0;
+    margin-left: 2%;
+}
+.heart-icon {
+    padding-top: 15px;
+    padding-right: 15px;
+    margin-left: -15px;
+}
+.nav-container {
+    padding: 5rem 3rem 3rem 3rem;
+}
+
+.vehicleImg-container {
+    text-align: center;
+}
+body .vehicleDetails-container {
+    margin: 5% 3% 5% 3%;
+    min-height: calc(390px - 10%);
+}
+body .details-container, .site-container-one h3.prev, body .price-container {
+    margin-left: 40px;
+}
+body .vehicleImg-container {
+    margin-right: 0;
+}
+body .price-container {
+    margin-right: 3%;
+}
+body .vehicleImg-two-container {
+    margin: 10% 5% 10% 5%;
+    padding-top: 46px;
+    min-height: 390px;
+}
+body .vehicleImg-two-container img, body .vehicleImg-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+hr {
+    margin-bottom: 25px;
+}
+/**
+*LIGHT MODE STYLES
+**/
