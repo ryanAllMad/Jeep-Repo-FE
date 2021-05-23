@@ -3,48 +3,83 @@ HOME
 **/
 body {
   background: url(/src/components/banners-brand-jeep.png) no-repeat 0 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+body h3:not(.next):not(.prev) {
+  color: rgb(255, 186, 0);
+  font-size: 1.53rem;
 }
 /**
 FANCY STUFF
 **/
+body h3.next, body h3.prev {
+  align-self: center;
+  line-height: initial;
+}
+h3.prev:before {
+  content: "\00a0";
+  vertical-align: middle;
+  padding-right: 10px;
+  opacity: 1;
+  filter: invert(1);
+}
+h3.next:after { 
+  content:"\00a0"; 
+  vertical-align: middle;
+  padding-left: 10px;
+  opacity: 1;
+  filter: invert(1);
+}
+h3.prev:hover:before {
+  content:url("/src/components/icons/backward-solid.svg");
+  opacity: .5;
+  transition: opacity ease-in 500ms;
+  margin-left: -18px;
+}
+h3.next:hover:after { 
+  content:url("/src/components/icons/forward-solid.svg");
+  opacity: .5;
+  transition: opacity ease-in 500ms;
+  margin-right: -18px;
+}
+h3.next:active:after, h3.prev:active:before {
+  content:url("/src/components/icons/thumbs-up-regular.svg");
+opacity: 1;
+transition: opacity ease-in 200ms;
+}
 body h3.next,
-body h3.prev {
+body h3.prev, body h3.next:active, body h3.prev:active{
   background: rgb(255, 186, 0);
-  box-shadow: 2px 1px 20px #202b3b;
-  border: 2px inset transparent;
+  box-shadow: 2px 1px 20px #888888;
+  border: 2px solid transparent;
   padding: 1.5% 1%;
   margin: 3% 5%;
+  margin-left: 40px;
   border-radius: 10px;
-  color: #333333;
+  color: #202B3B;
 }
-body .prev:hover,
-body .next:hover {
+body h3.prev:hover,
+body h3.next:hover {
   color: #efefef;
-  border: 2px inset #333333;
-  background: rgb(255, 186, 0);
-  background-image: linear-gradient(
-    148deg,
-    rgba(255, 186, 0, 0.5) 0%,
-    rgba(212, 33, 0, 0.5) 96%,
-    rgba(32, 43, 59, 0.5) 100%
-  );
-  box-shadow: 2px 1px 6px #202b3b;
-  transition: background-image ease-in-out 500ms, color ease-in 200ms,
+  border: 2px solid #efefef;
+  background: #8f192b;
+  box-shadow: 2px 1px 6px #888888;
+  transition: background-color ease-in-out 500ms, color ease-in 200ms,
     border-color ease-in 200ms, box-shadow ease-in 200ms;
+}
+body .prev:visited,
+body .next:visited {
+  outline: #202b3b solid 2px;
+  outline-offset: 10px;
 }
 body .heart-icon {
   color: rgb(255, 186, 0);
   border-radius: 10px;
 }
 .heart-icon:hover {
-  color: #333333;
-  background-image: linear-gradient(
-    148deg,
-    rgba(255, 186, 0, 0.5) 0%,
-    rgba(212, 33, 0, 0.5) 96%,
-    rgba(32, 43, 59, 0.5) 100%
-  );
-  transition: color ease-in 500ms, background-image ease-in-out 200ms;
+  color: #efefef;
+  transition: color ease-in 500ms;
 }
 
 /**
@@ -57,24 +92,23 @@ body .nav-container {
   background-color: rgb(255, 186, 0);
 }
 a.nav {
-  color: #333333;
+  color: #202B3B;
   text-transform: uppercase;
   padding-bottom: 5%;
 }
 a.nav:hover,
 a.nav:visited {
-  color: #8f0c2c;
+  color: #8f192b;
 }
 .x-close-icon {
+    top: 100px;
   margin-left: 1%;
-  color: #8f0c2c;
+  color: #8f192b;
 }
 body .hamburger-icon {
   color: #efefef;
 }
-body h3{
-  color:rgb(255, 186, 0);
-}
+
 body .hamburger-icon:hover {
   color: #efefef;
 }
@@ -88,7 +122,8 @@ hr {
 body .site-container-two,
 body .site-container-one {
   border: none;
-  background-color: #efefef;
+  background-color: #17212D;
+  grid-template-rows: 100px auto auto;
 }
 .site-container-two h3.next {
   grid-column: 3/3;
@@ -108,7 +143,17 @@ body .hamburger-icon {
 .nav-container {
   padding: 5rem 3rem 3rem 3rem;
 }
-
+/**menu cls fix**/
+.nav-container + .site-container-one, .nav-container + .site-container-two {
+  margin-top: 88px;
+}
+.App > div svg + section {
+  padding-top: 88px;
+}
+.App > div {
+  min-height: 88px;
+}
+/**cls fix**/
 .vehicleImg-container {
   text-align: center;
 }
@@ -121,6 +166,7 @@ body .details-container,
 body .price-container {
   margin-left: 40px;
 }
+
 body .vehicleImg-container {
   margin-right: 0;
 }
