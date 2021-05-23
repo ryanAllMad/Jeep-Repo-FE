@@ -2,112 +2,143 @@
 HOME
 **/
 body {
-    background: url(/src/components/banners-brand-jeep.png) no-repeat 0 0;
+  background: url(/src/components/banners-brand-jeep.png) no-repeat 0 0;
 }
+/**
+FANCY STUFF
+**/
+body h3.next,
+body h3.prev {
+  background: rgb(255, 186, 0);
+  box-shadow: 2px 1px 20px #202b3b;
+  border: 2px inset transparent;
+  padding: 1.5% 1%;
+  margin: 3% 5%;
+  border-radius: 10px;
+  color: #333333;
+}
+body .prev:hover,
+body .next:hover {
+  color: #efefef;
+  border: 2px inset #333333;
+  background: rgb(255, 186, 0);
+  background-image: linear-gradient(
+    148deg,
+    rgba(255, 186, 0, 0.5) 0%,
+    rgba(212, 33, 0, 0.5) 96%,
+    rgba(32, 43, 59, 0.5) 100%
+  );
+  box-shadow: 2px 1px 6px #202b3b;
+  transition: background-image ease-in-out 500ms, color ease-in 200ms,
+    border-color ease-in 200ms, box-shadow ease-in 200ms;
+}
+body .heart-icon {
+  color: rgb(255, 186, 0);
+  border-radius: 10px;
+}
+.heart-icon:hover {
+  color: #333333;
+  background-image: linear-gradient(
+    148deg,
+    rgba(255, 186, 0, 0.5) 0%,
+    rgba(212, 33, 0, 0.5) 96%,
+    rgba(32, 43, 59, 0.5) 100%
+  );
+  transition: color ease-in 500ms, background-image ease-in-out 200ms;
+}
+
 /**
 *DARK MODE STYLES
 **/
 #root {
-    background: #202B3B;
+  background: #202b3b;
 }
 body .nav-container {
-    background-color: rgb(255, 186, 0);
+  background-color: rgb(255, 186, 0);
 }
 a.nav {
-color: #333333;
-    text-transform: uppercase;
-       /*
-    border-style: solid;
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    border-bottom-width: 2px;
-    border-color: #333333;
-    border-radius: 10%;
-    */
-    padding-bottom: 5%;
+  color: #333333;
+  text-transform: uppercase;
+  padding-bottom: 5%;
 }
-a.nav:hover, a.nav:visited {
-    color: #8f0c2c; 
+a.nav:hover,
+a.nav:visited {
+  color: #8f0c2c;
 }
 .x-close-icon {
-    margin-left: 1%;
-    color: #8f0c2c;
+  margin-left: 1%;
+  color: #8f0c2c;
 }
-body h3, body .hamburger-icon {
-    color: #efefef;
+body .hamburger-icon {
+  color: #efefef;
 }
-body .prev:hover, body .next:hover, body .hamburger-icon:hover {
-    color:#efefef;
+body h3{
+  color:rgb(255, 186, 0);
+}
+body .hamburger-icon:hover {
+  color: #efefef;
 }
 hr {
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: rgb(255, 186, 0);
-    border-radius: 100%;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 186, 0);
+  border-radius: 100%;
 }
 
-body .site-container-two, body .site-container-one {
-    border:none;
-    background-color: #efefef;
+body .site-container-two,
+body .site-container-one {
+  border: none;
+  background-color: #efefef;
 }
 .site-container-two h3.next {
-    grid-column: 3/3;
+  grid-column: 3/3;
+}
 
-}
-body h3.next, body h3.prev {
-    background: rgb(255, 186, 0);
-    padding: 1.5% 1%;
-    margin: 3% 5%;
-    border-radius: 10px;
-    color:#333333;
-}
-body h3.next:hover, body h3.prev:hover {
-    background: #202B3B;
-}
 /**
 SPACING
 **/
 body .hamburger-icon {
-    padding: 1.5% .5% 1.5% 0;
-    margin-left: 2%;
+  padding: 1.5% 0.5% 1.5% 0;
+  margin-left: 2%;
 }
 .heart-icon {
-    padding-top: 15px;
-    padding-right: 15px;
-    margin-left: -15px;
+  padding: 15px;
+  margin-left: -15px;
 }
 .nav-container {
-    padding: 5rem 3rem 3rem 3rem;
+  padding: 5rem 3rem 3rem 3rem;
 }
 
 .vehicleImg-container {
-    text-align: center;
+  text-align: center;
 }
 body .vehicleDetails-container {
-    margin: 5% 3% 5% 3%;
-    min-height: calc(390px - 10%);
+  margin: 5% 3% 5% 3%;
+  min-height: calc(390px - 10%);
 }
-body .details-container, .site-container-one h3.prev, body .price-container {
-    margin-left: 40px;
+body .details-container,
+.site-container-one h3.prev,
+body .price-container {
+  margin-left: 40px;
 }
 body .vehicleImg-container {
-    margin-right: 0;
+  margin-right: 0;
 }
 body .price-container {
-    margin-right: 3%;
+  margin-right: 3%;
 }
 body .vehicleImg-two-container {
-    margin: 10% 5% 10% 5%;
-    padding-top: 46px;
-    min-height: 390px;
+  margin: 10% 5% 10% 5%;
+  padding-top: 46px;
+  min-height: 390px;
 }
-body .vehicleImg-two-container img, body .vehicleImg-container img{
-    width: 100%;
-    border-radius: 15px;
+body .vehicleImg-two-container img,
+body .vehicleImg-container img {
+  width: 100%;
+  border-radius: 15px;
 }
 hr {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 /**
 *LIGHT MODE STYLES
