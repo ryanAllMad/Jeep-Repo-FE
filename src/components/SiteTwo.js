@@ -1,4 +1,5 @@
 import '../styles/_sitetwo.scss';
+import '../styles/ryan.css';
 //importing arrow icons
 import useData from './Hooks/UseData';
 import Spinner from './Spinner';

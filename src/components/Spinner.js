@@ -7,7 +7,7 @@ const Spinner = () => {
       <div className='site-container'>
      <Loader
         type="ThreeDots"
-        color="#00BFFF"
+        color="rgb(255, 186, 0)"
         height={500}
         width={500}
         className='loader'

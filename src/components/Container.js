@@ -1,5 +1,6 @@
 // import completed components into this file
 import '../styles/_container.scss';
+import '../styles/ryan.css';
 import SiteOne from './SiteOne';
 import SiteTwo from './SiteTwo';
 import FavoritesList from './Favorites/FavoritesList';
